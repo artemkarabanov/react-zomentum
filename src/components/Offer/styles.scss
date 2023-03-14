@@ -1,0 +1,50 @@
+.offer {
+  padding: 100px 0 100px;
+  background: rgba(0, 255, 133, 0.08);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 89px 50px 50px;
+  }
+
+  &__container {
+    background: url("../../icons/offer-logo-pause.svg") bottom left no-repeat,
+      url("../../icons/offer-logo-pause.svg") top right no-repeat;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 100x;
+  }
+
+  &__container-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+    margin: 0 auto;
+    padding: 100px;
+
+    @media (max-width: 768px) {
+      padding: 70px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 67px;
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+  }
+
+  &__card-text {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000c2d;
+  }
+}
